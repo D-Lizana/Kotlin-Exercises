@@ -146,6 +146,47 @@ private fun mapas(){
     miMapa.remove("Pepe")
 }
 
+private fun bucles(){
+    val miArray = listOf<String>("hola","adios","suscribete")
+    val miMapa = mapOf("Diego" to "Crack", "Vane" to "Chata", "Efren" to "Bro")
+
+    // For
+    for(cosa: String in miArray){
+        println(cosa)
+    }
+    for(elemento in miMapa){
+        println("${elemento.key}: ${elemento.value}")
+    }
+
+    for(x in 1..10){
+        println(x)
+    }
+
+    for(x in 10 until 30){
+        println(x)
+    }
+
+    for(x in 0..10 step 2){
+        println(x)
+    }
+
+    for(x in 10 downTo 0 step 3){
+        println(x)
+    }
+
+    val arrayNumeros = (0..20)
+    for(numero in arrayNumeros){
+        println(numero)
+    }
+
+    // While
+    var x = 0
+    while(x<10){
+        println(x)
+        x++
+    }
+}
+
 
 
 
