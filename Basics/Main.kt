@@ -187,6 +187,31 @@ private fun bucles(){
     }
 }
 
+private fun excepciones(){
+
+    var string = "dev"
+    // string = null da un error de compilacion
+    println(string)
+
+    var nullSafety: String? = "Va a tomar valor nulo"
+    nullSafety = null
+    println(nullSafety)
+    println(string!!) // las dos exclamaciones significan que esta comprobando que no es null
+
+    if (string != null){
+        println(string)
+    }
+
+    println(string!!.length) // comprobamos que no es null antes de buscar length para que no de errores
+    println(nullSafety?.length) // en este caso comprueba si es null, si lo es entonces no la ejecuta
+
+    nullSafety?.let { // aqui fuerza a que se lea pero solo si no es null
+        println(it)
+    } ?: run{
+        println(string)
+    } // si es null entonces corre esta otra linea de codigo sin usar if else
+}
+
 
 
 
