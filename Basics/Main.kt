@@ -58,19 +58,65 @@ private fun condicionales(){
     */
 }
 
-private fun sentenciaWhen(){
+private fun sentenciaWhen() {
     val pais = "España"
     val edad = 10
 
     // como un switch
-    when(pais){
+    when (pais) {
         "España", "Mexico", "Argentina" -> {
             println("Se habla español")
         }
+
         "Italia" -> {
             println("Se habla italiano")
         }
+
         else -> {
             println("Cuando no es ninguno de los valores")
         }
     }
+
+    when(edad){
+        1, 2, 3 -> {
+            println("Eres un bebé")
+        }
+        in 3..10 -> {
+            println("Eres un niño")
+        }
+        in 11..99 -> {
+            println("A trabajar como una perra")
+        }
+        else -> {
+            println("El puto amo")
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
