@@ -212,6 +212,17 @@ private fun excepciones(){
     } // si es null entonces corre esta otra linea de codigo sin usar if else
 }
 
+fun funciones(){
+    fun nombra(nombre: String, edad: Int){
+        println("Hola, $nombre, tienes $edad años.")
+    }
+    fun suma(numero1: Int, numero2: Int) : Int{ // hay que especificar el tipo de dato que retorna
+        val suma: Int = numero1+numero2
+        return suma
+    }
+    println(suma(10, suma(5,5)))
+}
+
 
 
 
