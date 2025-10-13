@@ -125,6 +125,27 @@ private fun arrays(){
     miArray.sort()
 }
 
+private fun mapas(){
+    // tambien llamados diccionarios
+
+    var miMapa: Map<String,Int> = mapOf()
+    miMapa = mutableMapOf("Pepe" to 1, "Vane" to 2, "Efren" to 3)
+
+    // si volvemos a asignar el mapOf a la variable se borra to do lo anterior
+    // para poder añadir un valor el mapa tiene que ser mutable, para ello usamos mutableMapOf
+
+    miMapa["Ana"] = 7
+    miMapa.put("Maria", 8)
+
+    miMapa.put("Pepe", 10)
+    miMapa["Pepe"] = 12// cambia el valor asignado a Pepe
+
+    // Como acceder a los valores en los diccionarios
+    println(miMapa["Pepe"])
+
+    miMapa.remove("Pepe")
+}
+
 
 
 
