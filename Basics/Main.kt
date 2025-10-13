@@ -93,7 +93,37 @@ private fun sentenciaWhen() {
     }
 }
 
+private fun arrays(){
 
+    val nombre = "Pepe"
+    val apellido = "Pepito"
+    val edad = "Pepinillo"
+
+    val miArray: ArrayList<String> = arrayListOf<String>()
+    miArray.add(nombre)
+    miArray.add(apellido)
+    miArray.add(edad)
+
+    println(miArray)
+
+    miArray.addAll(listOf("Aqui","añadimos","varios valores", "a la vez"))
+
+    println(miArray[2])
+
+    miArray.removeAt(4)
+
+    miArray.forEach {
+        println(it)
+    }
+
+    // Operaciones
+
+    println(miArray.count())
+    miArray.clear()
+    miArray.first()
+    miArray.last()
+    miArray.sort()
+}
 
 
 
