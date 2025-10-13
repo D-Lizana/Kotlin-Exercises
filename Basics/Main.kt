@@ -40,3 +40,20 @@ private fun tiposDeDatos(){
     val bool2 = false
     println(bool==bool2)
 }
+
+private fun condicionales(){
+
+    val numero = 10
+    println("$numero")
+
+    if(numero < 10){
+        println("Algo")
+    }
+    else{
+        println("Nada")
+    }
+    /*
+        = == < > >= <= !=
+        && || !
+    */
+}
