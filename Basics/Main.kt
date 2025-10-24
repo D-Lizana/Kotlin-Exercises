@@ -1,6 +1,9 @@
 class Main {
 
+    var nombre: String?
+    val edad: Int = 18
 
+    
 
 
 
@@ -213,7 +216,7 @@ private fun excepciones(){
 }
 
 fun funciones(){
-    fun nombra(nombre: String, edad: Int){
+    fun nombra(nombre: String="Pepe", edad: Int=30){
         println("Hola, $nombre, tienes $edad años.")
     }
     fun suma(numero1: Int, numero2: Int) : Int{ // hay que especificar el tipo de dato que retorna
