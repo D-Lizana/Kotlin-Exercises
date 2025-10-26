@@ -6,6 +6,8 @@ fun main(){
 
     ejercicio2(descuento = 0.3, precio = 100)
 
+    ejercicio3()
+
 }
 
 fun ejercicio1(nombre: String?, edad: Int){
@@ -24,4 +26,13 @@ fun ejercicio2(precio: Int, descuento: Double = 0.1, aplicarIva: Boolean = true)
     }
 
     return precioFinal
+}
+
+fun ejercicio3(){
+
+    var producto = Producto("Martillo",10.99,5)
+    var producto2 = Producto(nombre = "Fregona",precio = 5.99, null)
+
+    producto.mostrarInfo()
+    producto2.mostrarInfo()
 }
