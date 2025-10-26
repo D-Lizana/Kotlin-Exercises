@@ -8,6 +8,8 @@ fun main(){
 
     ejercicio3()
 
+    ejercicio4()
+
 }
 
 fun ejercicio1(nombre: String?, edad: Int){
@@ -35,4 +37,19 @@ fun ejercicio3(){
 
     producto.mostrarInfo()
     producto2.mostrarInfo()
+}
+
+fun ejercicio4(){
+
+    var coche = Coche("Nissan")
+    var coche2 = Coche("Hyundai")
+    var coche3 = Coche("Toyota")
+    var moto = Moto("Honda")
+    var moto2 = Moto("Kawasaki")
+
+    var vehiculos: List<Vehiculo> = listOf(coche,coche2,coche3, moto,moto2)
+
+    for(v in vehiculos){
+        v.acelerar()
+    }
 }
