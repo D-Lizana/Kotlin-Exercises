@@ -3,14 +3,11 @@ import java.util.*
 fun main(){
 
     ejercicio1("Efren", 30)
-
     ejercicio2(descuento = 0.3, precio = 100)
-
     ejercicio3()
-
     ejercicio4()
-
     ejercicio5()
+    ejercicio6()
 
 }
 
@@ -67,8 +64,22 @@ fun ejercicio5(){
 }
 
 fun ejercicio6(){
+    var biblioteca = Biblioteca();
 
+    var libro1 = Libro("Dale", "Chicha", true)
+    var libro2 = Libro("Dale", "Chicha", true)
+    var libro3 = Libro("Dale", "Chicha", true)
+    var libro4 = Libro("Dale", "Chicha", true)
+    var libro5 = Libro("Dale", "Chicha", true)
 
+    biblioteca.agregarLibro(libro1)
+    biblioteca.agregarLibro(libro2)
+    biblioteca.agregarLibro(libro3)
+    biblioteca.agregarLibro(libro4)
+    biblioteca.agregarLibro(libro5)
+
+    biblioteca.listarLibros()
+    println(biblioteca.buscarPorAutor("Chicha"))
 
 
 }
