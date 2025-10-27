@@ -65,3 +65,10 @@ fun ejercicio5(){
     println(calculadora.dividir(10.0,0.0)?: "No se puede dividir entre 0.")
 
 }
+
+fun ejercicio6(){
+
+
+
+
+}
