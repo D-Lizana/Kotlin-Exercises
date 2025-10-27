@@ -10,6 +10,8 @@ fun main(){
 
     ejercicio4()
 
+    ejercicio5()
+
 }
 
 fun ejercicio1(nombre: String?, edad: Int){
@@ -52,4 +54,14 @@ fun ejercicio4(){
     for(v in vehiculos){
         v.acelerar()
     }
+}
+
+fun ejercicio5(){
+
+    var calculadora = Calculadora()
+
+    println(calculadora.sumar(10,10))
+
+    println(calculadora.dividir(10.0,0.0)?: "No se puede dividir entre 0.")
+
 }
